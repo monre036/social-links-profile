@@ -1,0 +1,51 @@
+@use '../mixins/responsive.scss' as *;
+
+.card {
+  background-color: #1f1f1f;
+  width: 20.4375rem;
+  height: 36.1875rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+
+  @include responsive('desktop') {
+    width: 24rem;
+    height: 38.1875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__image {
+    width: 5.5rem;
+    margin-inline: auto;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 150%;
+    margin-bottom: -0.625rem;
+  }
+
+  &__place {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: #c4f82a;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 150%;
+    margin-bottom: 1.5rem;
+  }
+}
