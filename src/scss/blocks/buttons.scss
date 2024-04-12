@@ -1,3 +1,5 @@
+@use '../mixins/hover.scss' as *;
+
 .card__button {
   display: flex;
   width: 17.4375rem;
@@ -7,4 +9,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+
+  @include hover {
+    background-color: #c4f82a;
+    color: #333333;
+  }
 }
